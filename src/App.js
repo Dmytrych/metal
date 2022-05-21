@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home";
+import Home from "./pages/Home";
 import "./App.css"
 import { useContext, useState } from "react";
-import Calculator from "./Pages/Calculator";
+import Calculator from "./pages/Calculator";
 
 function App() {
   const [ menuVisible, setMenuVisible] = useState(false)
@@ -12,7 +12,7 @@ function App() {
       <div>
         <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="/" element={<Calculator/>} />
+          <Route path="/calc" element={<Calculator/>} />
         </Routes>
       </div>
     </>

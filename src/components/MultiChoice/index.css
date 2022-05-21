@@ -1,0 +1,11 @@
+.choice-button {
+    width: 100%;
+}
+
+.multi-choice-button {
+    width: 100%;
+}
+
+.multi-choice-button-selected {
+    background-color: red;
+}
