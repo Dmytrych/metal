@@ -1,11 +1,25 @@
 .choice-button {
-    width: 100%;
+    font-family: sans-serif;
+    height: 3.5vh;
+}
+
+.button-text {
+    margin-left: 1vw;
+    cursor: default;
+}
+
+.choice-button:hover {
+    background-color: rgba(28, 79, 130, 0.07);
+}
+
+.multi-choice-text {
+    color: rgba(28, 79, 130, 1)
 }
 
 .multi-choice-button {
-    width: 100%;
+    
 }
 
 .multi-choice-button-selected {
-    background-color: red;
+    background-color: rgba(28, 79, 130, 0.2) !important;
 }

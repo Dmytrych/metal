@@ -1,5 +1,15 @@
+html, body, p {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .full-height {
   height: 100%;
+}
+
+.full-width {
+  width: 100%;
 }
 
 .app-sidebar {
@@ -10,12 +20,32 @@
   display: flex;
 }
 
+.unit-inline-block {
+  display: inline-block;
+}
+
+.unit-x-center {
+  align-items: center;
+}
+
+.unit-y-center {
+  justify-content: center;
+}
+
 .units-row {
   flex-direction: row;
 }
 
 .units-column {
   flex-direction: column;
+}
+
+.horizontal-center {
+  align-content: center;
+}
+
+.vertical-center {
+  justify-content: center;
 }
 
 .unit-40 {

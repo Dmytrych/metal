@@ -1,0 +1,22 @@
+export const en = {
+    iron: 'Iron',
+    stainlessSteel: 'Stainless Steel',
+    aluminum: 'Aluminum',
+    copper: 'Copper',
+    brass: 'Brass',
+    bronze: 'Bronze',
+    titan: 'Titan',
+    armature: 'Armature',
+    iBeam: 'I-beam',
+    square: 'Square',
+    cilinder: 'Cilinder/Rod',
+    ribbon: 'Ribbon',
+    sheet: 'Sheet/Plate',
+    bend: 'Pipe Bend',
+    pipe: 'Round Pipe',
+    profile: 'Profile Pipe',
+    andgle: 'Angle',
+    flange: 'Flange',
+    channel: 'Channel',
+    hexahedron: 'Hexahedron'
+}

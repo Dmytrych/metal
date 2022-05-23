@@ -1,23 +1,21 @@
 import { useState } from "react"
 import "./index.css"
 
-export default function MultiChoice({onSelectionChanged}) {
-    var multiChoiceButtons = ["Metal", "Copper", "Wow"]
-
-    var [selection, setSelection] = useState()
+export default function MultiChoice({onSelectionChanged, buttonNames, selection}) {
 
     var onElementSelection = (name) => {
-        setSelection(name);
         onSelectionChanged(name);
     }
 
-    return <div className="units-column">
+    return <div className="units-column full-height multi-choice-text">
         {
-            multiChoiceButtons.map(element => <MultiChoiceButton key={element} name={element} onSelection={onElementSelection} isSelected={selection === element}/>)
+            buttonNames.map(element => <MultiChoiceButton key={element} name={element} onSelection={onElementSelection} isSelected={selection === element}/>)
         }
     </div>
 }
 
 const MultiChoiceButton = ({name, onSelection, isSelected}) => {
-    return <div className={"choice-button" + (isSelected ? " multi-choice-button-selected" : " multi-choice-button")} onClick={() => {onSelection(name)}}>{name}</div>
+    return <div className={`choice-button unit-flex unit-x-center unit-x-center ${(isSelected ? "multi-choice-button-selected" : "multi-choice-button")}`} onClick={() => {onSelection(name)}}>
+        <p className="button-text">{name}</p>
+    </div>
 }
